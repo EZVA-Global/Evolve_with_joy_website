@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Evolve With Joy - Playful & Uplifting Palette */
+    --background: 36 30% 93%;  /* #EEEBE4 soft cream */
+    --foreground: 160 12% 31%;  /* #3e6759 forest green */
+
+    --card: 36 30% 93%;
+    --card-foreground: 160 12% 31%;
+
+    --popover: 36 30% 93%;
+    --popover-foreground: 160 12% 31%;
+
+    --primary: 160 12% 31%;  /* #3e6759 forest green */
+    --primary-foreground: 36 30% 93%;
+
+    --secondary: 90 18% 60%;  /* #99A58F sage green */
+    --secondary-foreground: 160 12% 31%;
+
+    --muted: 30 18% 82%;  /* #D6CABC warm neutral */
+    --muted-foreground: 160 12% 31%;
+
+    --accent: 43 45% 66%;  /* #D8B979 soft gold */
+    --accent-foreground: 160 12% 31%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 30% 93%;
+
+    --border: 30 18% 82%;
+    --input: 30 18% 82%;
+    --ring: 43 45% 66%;
+
+    --radius: 1.5rem;
+    
+    /* Custom design tokens */
+    --sage: 90 18% 60%;
+    --taupe: 25 15% 49%;
+    --cream: 36 30% 93%;
+    --warm-neutral: 30 18% 82%;
+    --gold: 43 45% 66%;
+    --forest: 160 12% 31%;
+    --logo-bg: 155 18% 24%;  /* #35443d for logo background */
+    
+    /* Playful shadows with warmth */
+    --shadow-soft: 0 2px 12px rgba(62, 103, 89, 0.1);
+    --shadow-medium: 0 4px 20px rgba(62, 103, 89, 0.15);
+    --shadow-large: 0 8px 40px rgba(62, 103, 89, 0.2);
+    --shadow-gold: 0 4px 16px rgba(216, 185, 121, 0.25);
+    
+    /* Playful transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keeping light mode only for this peaceful brand */
+    --background: 36 30% 93%;
+    --foreground: 155 18% 24%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
