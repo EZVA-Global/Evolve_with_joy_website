@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 const Reviews = () => {
   const reviews = [
     {
-      testimonial: "Working with Anne Marie has been transformative. She helped me find clarity and peace in ways I never thought possible.",
-      name: "Sarah M."
+      testimonial: "Anne Marie is more than a coach, she’s a true catalyst for transformation. When we began working together in 2010, I was overwhelmed by years of grief and trauma. Anne Marie helped me shift my focus from pain to possibility, teaching me to create the mental space to thrive instead of just survive. Fifteen years later, she continues to be a priceless presence in my life, helping me stay grounded and purposeful. Thanks to her guidance, I now live with joy, clarity, and gratitude. If you seek genuine, lasting change, Anne Marie is the one to turn to.",
+      name: "Torey"
     },
     {
-      testimonial: "The guidance and support I received helped me reconnect with my authentic self. I'm forever grateful.",
-      name: "Michael R."
+      testimonial: "Anne Marie is a breath of fresh air! She helped me navigate parts of myself with clarity and compassion. I can’t thank her enough! With her guidance, I learned how to approach internal conflicts in an empowering and meditative way that I did not know was possible. And in just one session I have obtained a tool that I now use in my everyday life.",
+      name: "Anthony"
     }
   ];
 
