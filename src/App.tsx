@@ -19,7 +19,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* 👇 Agrega basename */}
+      <BrowserRouter basename="/Evolve_with_joy_website">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -28,7 +29,6 @@ const App = () => (
           {/*<Route path="/blog/:id" element={<BlogPost />} />*/}
           <Route path="/contact" element={<Contact />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
