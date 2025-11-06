@@ -1,13 +1,26 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 
 const Navigation = () => {
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed top-0 w-full bg-background/98 backdrop-blur-sm border-b border-border z-50 shadow-soft">
+    <nav className={`fixed top-0 w-full border-b border-border z-50 transition-all duration-300 ${
+      isScrolled ? "bg-background/98 backdrop-blur-sm shadow-soft" : "bg-background"
+    }`}>
       <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group">
