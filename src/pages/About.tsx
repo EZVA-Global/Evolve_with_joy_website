@@ -78,6 +78,7 @@ const About = () => {
           </div>
 
           {/* Credenciales */}
+          {/* 
           <div className="bg-background rounded-2xl p-8 shadow-medium mt-12 max-w-3xl mx-auto">
             <h3 className="font-heading text-2xl text-foreground mb-4">
               Credentials & Training
@@ -104,9 +105,10 @@ const About = () => {
                 <span>10+ years of personal meditation practice</span>
               </li>
             </ul>
-          </div>
+          </div>*/}
         </div>
       </section>
+       
       
       {/* Coaching Philosophy */}
       <section className="py-16 bg-background">
