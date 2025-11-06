@@ -79,7 +79,7 @@ const Contact = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-4">
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/evolvewithjoy/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all group"
@@ -89,7 +89,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/profile.php?id=100089750405248"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all group"
@@ -99,7 +99,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://tiktok.com"
+                    href="https://www.tiktok.com/@evolvewithjoy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all group"
