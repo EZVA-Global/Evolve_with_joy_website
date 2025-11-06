@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://EZVA-Global.github.io",
+  "homepage": "https://EZVA-Global.github.io/Evolve_with_joy_website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
