@@ -9,11 +9,11 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  // 👇 Esto es CLAVE para GitHub Pages
-  base: "/Evolve_with_joy_website/",
+  base: '/',
   plugins: [
     react(),
-    mode === "development" && componentTagger(),
+    mode === 'development' &&
+    componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
