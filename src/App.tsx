@@ -19,7 +19,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* 👇 Cambiado de BrowserRouter a HashRouter */}
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
