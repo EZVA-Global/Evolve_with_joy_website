@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Newsletter = () => {
+  const handleJoinClick = (e: React.FormEvent) => {
+    e.preventDefault();
+    window.location.href = "mailto:connect@evolvewithjoy.com?subject=Newsletter - Join the Journey&body=Hi Anne Marie,%0A%0AI would love to stay updated with news and reflections from Evolve With Joy.%0A%0AThank you 💫";
+  };
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -12,18 +17,21 @@ const Newsletter = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Receive insights, reflections, and resources on mindful living and inner transformation
           </p>
-          
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input 
-              type="email" 
-              placeholder="Your email address" 
+
+          <form
+            onSubmit={handleJoinClick}
+            className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+          >
+            <Input
+              type="email"
+              placeholder="Your email address"
               className="flex-1"
             />
             <Button type="submit" className="whitespace-nowrap">
               Join the Journey
             </Button>
           </form>
-          
+
           <p className="text-sm text-muted-foreground mt-4">
             No spam, ever. Unsubscribe anytime.
           </p>

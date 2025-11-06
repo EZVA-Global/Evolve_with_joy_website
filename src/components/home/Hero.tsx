@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-home.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,19 +28,15 @@ const Hero = () => {
             Guiding you toward wholeness, joy, and self-understanding.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button 
-              size="lg" 
-              className="bg-gold text-forest hover:bg-gold/90 shadow-gold hover:shadow-large transition-all rounded-full"
-            >
-              Work With Me
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/15 backdrop-blur-sm rounded-full transition-all"
-            >
-              Book a Session
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2 bg-gold/20 border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/15 backdrop-blur-sm rounded-full transition-all"
+              >
+                ✨ Contact Me
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

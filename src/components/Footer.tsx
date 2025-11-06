@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Instagram, Facebook, Youtube } from "lucide-react";
+import { Mail, Instagram, Facebook } from "lucide-react";
+import EWJLogo from "../assets/EWJ-logo.png";
 
 const Footer = () => {
   return (
@@ -10,10 +11,12 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <div className="bg-logo-bg rounded-xl px-3 py-1.5">
-                <span className="font-heading text-base text-cream">EWJ</span>
-              </div>
+            <Link to="/" className="flex items-center gap-3 mb-4 group">
+              <img 
+                src={EWJLogo} 
+                alt="EWJ Logo" 
+                className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
+              />
               <h3 className="font-heading text-xl group-hover:text-gold transition-colors">
                 Evolve With Joy
               </h3>
@@ -29,7 +32,7 @@ const Footer = () => {
               <li><Link to="/" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">Home</Link></li>
               <li><Link to="/about" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">About</Link></li>
               <li><Link to="/services" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">Services</Link></li>
-              <li><Link to="/blog" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">Blog</Link></li>
+              <li><Link to="/coming-soon" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">Blog</Link></li>
               <li><Link to="/contact" className="opacity-90 hover:opacity-100 hover:text-gold transition-all">Contact</Link></li>
             </ul>
           </div>
@@ -52,7 +55,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-gold">Follow</h4>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/evolvewithjoy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-cream/10 hover:bg-cream/20 rounded-lg p-2 transition-all hover:scale-110"
@@ -61,7 +64,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@evolvewithjoy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-cream/10 hover:bg-cream/20 rounded-lg p-2 transition-all hover:scale-110"
@@ -72,22 +75,13 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100089750405248"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-cream/10 hover:bg-cream/20 rounded-lg p-2 transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-cream/10 hover:bg-cream/20 rounded-lg p-2 transition-all hover:scale-110"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

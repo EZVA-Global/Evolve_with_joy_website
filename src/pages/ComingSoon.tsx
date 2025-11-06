@@ -16,7 +16,7 @@ const ComingSoon = () => {
             Coming Soon
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            We're working on something special! Our booking system will be available soon. 
+            We're working on something special! This section will be available soon. 
             In the meantime, feel free to reach out via the contact page.
           </p>
           <Link to="/contact">

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -18,12 +19,14 @@ const CTA = () => {
           Ready to explore what's possible when you turn inward with compassion? 
           I'd love to connect and learn about your story.
         </p>
-        <Button 
-          size="lg" 
-          className="bg-forest text-cream hover:bg-forest/90 shadow-large hover:shadow-gold rounded-full px-8 transition-all"
-        >
-          Schedule a Discovery Call
-        </Button>
+        <Link to="/contact">
+          <Button 
+            size="lg" 
+            className="bg-forest text-cream hover:bg-forest/90 shadow-large hover:shadow-gold rounded-full px-8 transition-all"
+          >
+            Send me a message
+          </Button>
+        </Link>
       </div>
     </section>
   );

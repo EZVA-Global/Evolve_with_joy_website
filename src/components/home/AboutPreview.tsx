@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import annePortrait from "@/assets/anne-portrait.jpg";
+import anneMariePortrait from "@/assets/annemarie-photo.jpeg";
 
 const AboutPreview = () => {
   return (
@@ -14,8 +14,8 @@ const AboutPreview = () => {
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-gold/10 rounded-full blur-2xl" />
             <div className="relative rounded-3xl overflow-hidden shadow-large border-4 border-gold/20">
               <img 
-                src={annePortrait} 
-                alt="Anne - Life Coach and Transformation Guide"
+                src={anneMariePortrait} 
+                alt="Anne Marie- Life Coach and Transformation Guide"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -26,7 +26,7 @@ const AboutPreview = () => {
               <span className="text-gold text-5xl">🌿</span>
             </div>
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
-              Meet Anne
+              Meet Anne Marie Hennessey
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               I believe that healing begins when we turn inward with compassion and curiosity. 
@@ -52,7 +52,7 @@ const AboutPreview = () => {
               True transformation happens when we learn to embrace all parts of ourselves 
               with understanding and love.
             </blockquote>
-              <p className="mt-6 text-muted-foreground font-medium">— Anne</p>
+              <p className="mt-6 text-muted-foreground font-medium">— Anne Marie</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-about.jpg";
+import heroImage from "@/assets/hero-about.png";
+import anneMariePhoto from "@/assets/annemarie-photo.jpeg"; // 👈 Nueva imagen añadida
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -27,7 +29,7 @@ const About = () => {
       {/* Introduction */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
               Welcome to Evolve With Joy
             </h2>
@@ -44,54 +46,64 @@ const About = () => {
       {/* Anne's Journey */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-              <div>
-                <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
-                  My Story
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  My path to becoming a transformational coach began with my own journey of 
-                  healing and self-discovery. After years of searching externally for answers, 
-                  I learned that the wisdom I sought was already within me—I just needed to 
-                  learn how to listen.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Through deep personal work and formal training in mindfulness-based practices 
-                  and Internal Family Systems, I discovered the profound impact of turning 
-                  inward with curiosity rather than judgment. This transformation inspired me 
-                  to dedicate my life to helping others do the same.
-                </p>
-              </div>
-              
-              <div className="bg-background rounded-2xl p-8 shadow-medium">
-                <h3 className="font-heading text-2xl text-foreground mb-4">
-                  Credentials & Training
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2">•</span>
-                    <span>Certified Life Coach (ICF Accredited)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2">•</span>
-                    <span>Internal Family Systems Level 1 & 2 Training</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2">•</span>
-                    <span>Mindfulness-Based Stress Reduction (MBSR)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2">•</span>
-                    <span>Somatic Experiencing Practitioner</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2">•</span>
-                    <span>10+ years of personal meditation practice</span>
-                  </li>
-                </ul>
-              </div>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            {/* Texto izquierda */}
+            <div>
+              <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-6">
+                My Story
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                My path to becoming a transformational coach began with my own journey of 
+                healing and self-discovery. After years of searching externally for answers, 
+                I learned that the wisdom I sought was already within me—I just needed to 
+                learn how to listen.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Through deep personal work and formal training in mindfulness-based practices 
+                and Internal Family Systems, I discovered the profound impact of turning 
+                inward with curiosity rather than judgment. This transformation inspired me 
+                to dedicate my life to helping others do the same.
+              </p>
             </div>
+
+            {/* Imagen derecha */}
+            <div className="flex justify-center">
+              <img
+                src={anneMariePhoto}
+                alt="Anne Marie - Evolve With Joy"
+                className="rounded-2xl shadow-lg w-full max-w-sm object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Credenciales */}
+          <div className="bg-background rounded-2xl p-8 shadow-medium mt-12 max-w-3xl mx-auto">
+            <h3 className="font-heading text-2xl text-foreground mb-4">
+              Credentials & Training
+            </h3>
+            <ul className="space-y-3 text-muted-foreground">
+              <li className="flex items-start">
+                <span className="text-secondary mr-2">•</span>
+                <span>Certified Life Coach (ICF Accredited)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-secondary mr-2">•</span>
+                <span>Internal Family Systems Level 1 & 2 Training</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-secondary mr-2">•</span>
+                <span>Mindfulness-Based Stress Reduction (MBSR)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-secondary mr-2">•</span>
+                <span>Somatic Experiencing Practitioner</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-secondary mr-2">•</span>
+                <span>10+ years of personal meditation practice</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -151,9 +163,11 @@ const About = () => {
             I'd be honored to support you on your journey toward greater peace, 
             clarity, and authentic joy.
           </p>
-          <Button size="lg" className="bg-accent-foreground text-accent hover:bg-accent-foreground/90">
-            Book a Discovery Session
-          </Button>
+          <Link to="/contact">
+            <Button size="lg" className="bg-accent-foreground text-accent hover:bg-accent-foreground/90">
+              Book a Discovery Session
+            </Button>
+          </Link>
         </div>
       </section>
       

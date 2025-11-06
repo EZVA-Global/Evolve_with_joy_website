@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Heart, Users, Mic, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const coachingBenefits = [
@@ -81,12 +82,14 @@ const Services = () => {
                 Using a blend of Internal Family Systems, mindfulness, and somatic practices, 
                 we'll create a safe space for deep healing and authentic growth.
               </p>
-              <Button 
-                size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold rounded-full"
-              >
-                Book Your Discovery Call
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold rounded-full"
+                >
+                  Book Your Discovery Call
+                </Button>
+              </Link>
             </div>
             
             <Card className="p-8 bg-gradient-to-br from-muted to-sage/10 border-gold/20 rounded-3xl shadow-medium">
@@ -140,12 +143,14 @@ const Services = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button 
-              size="lg"
-              className="bg-forest text-cream hover:bg-forest/90 shadow-large rounded-full"
-            >
-              Join a Workshop
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg"
+                className="bg-forest text-cream hover:bg-forest/90 shadow-large rounded-full"
+              >
+                Join a Workshop
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -182,13 +187,15 @@ const Services = () => {
                 Whether you're looking for a keynote speaker or facilitator for team development, 
                 I create customized experiences that leave lasting impact.
               </p>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-2 border-forest text-forest hover:bg-forest/5 rounded-full"
-              >
-                Inquire About Speaking
-              </Button>
+              <Link to="/contact">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-forest text-forest hover:bg-forest/5 rounded-full"
+                >
+                  Inquire About Speaking
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -207,19 +214,23 @@ const Services = () => {
             Let's explore which offering feels right for you
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button 
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold rounded-full"
-            >
-              Schedule Discovery Call
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="border-2 border-forest text-forest hover:bg-forest/5 rounded-full"
-            >
-              View Calendar
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-gold rounded-full"
+              >
+                Schedule Discovery Call
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-2 border-forest text-forest hover:bg-forest/5 rounded-full"
+              >
+                View Calendar
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
