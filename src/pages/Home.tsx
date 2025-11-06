@@ -4,6 +4,7 @@ import Hero from "@/components/home/Hero";
 import AboutPreview from "@/components/home/AboutPreview";
 import Services from "@/components/home/Services";
 import Testimonial from "@/components/home/Testimonial";
+import Reviews from "@/components/home/Reviews";
 import Newsletter from "@/components/home/Newsletter";
 import CTA from "@/components/home/CTA";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutPreview />
       <Services />
       <Testimonial />
+      <Reviews />
       <Newsletter />
       <CTA />
       <Footer />
